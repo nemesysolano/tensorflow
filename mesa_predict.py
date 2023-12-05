@@ -154,8 +154,8 @@ def load_dataset(file_path):
             
     
     source_dataset['mesa'] = mesa
-    source_dataset['direction'] = direction
-    return source_dataset[datasets['normalized_tick_volume'] > 0]
+    # ßsource_dataset['direction'] = direction
+    return source_dataset[source_dataset['normalized_tick_volume'] > 0]
 
 
 def load_datasets(directory):
